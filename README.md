@@ -57,12 +57,14 @@ POST
 ### Body
 Provide item details in the request body as JSON.
 
-sku: Stock Keeping Unit or unique identifier.
-name: Name of the item.
-category: Category to which the item belongs.
-tags: Comma-separated tags.
-in_stock: Boolean indicating if the item is in stock.
-quantity: Number of items in stock.
+{
+  "sku": "ItemSKU",
+  "name": "ItemName",
+  "category": "ItemCategory",
+  "tags": "ItemTags",
+  "in_stock": true,
+  "quantity": ItemQuantity
+}
 
 
 ## Retrieving Items
